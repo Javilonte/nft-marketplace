@@ -1,76 +1,68 @@
 import React, { useEffect, useState } from "react";
-import Breakpoint, { BreakpointProvider, setDefaultBreakpoints } from "react-socks";
-import { header } from 'react-bootstrap';
-import { Link } from '@reach/router';
+import Breakpoint, {
+  BreakpointProvider,
+  setDefaultBreakpoints,
+} from "react-socks";
+import { header } from "react-bootstrap";
+import Link from "next/link";
 import useOnclickOutside from "react-cool-onclickoutside";
 
+setDefaultBreakpoints([{ xs: 0 }, { l: 1199 }, { xl: 1200 }]);
 
-setDefaultBreakpoints([
-  { xs: 0 },
-  { l: 1199 },
-  { xl: 1200 }
-]);
+const NavLink = (props) => {
+  const { children, isCurrent, ...other } = props;
 
-const NavLink = props => (
-  <Link 
-    {...props}
-    getProps={({ isCurrent }) => {
-      // the object returned here is passed to the
-      // anchor element's props
-      return {
-        className: isCurrent ? 'active' : 'non-active',
-      };
-    }}
-  />
-);
+  return (
+    <Link {...other}>
+      <span className={isCurrent ? "active" : "non-active"}>{children}</span>
+    </Link>
+  );
+};
 
+const Header = function () {
+  const [openMenu, setOpenMenu] = React.useState(false);
+  const [openMenu1, setOpenMenu1] = React.useState(false);
+  const [openMenu2, setOpenMenu2] = React.useState(false);
+  const [openMenu3, setOpenMenu3] = React.useState(false);
+  const handleBtnClick = () => {
+    setOpenMenu(!openMenu);
+  };
+  const handleBtnClick1 = () => {
+    setOpenMenu1(!openMenu1);
+  };
+  const handleBtnClick2 = () => {
+    setOpenMenu2(!openMenu2);
+  };
+  const handleBtnClick3 = () => {
+    setOpenMenu3(!openMenu3);
+  };
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
+  const closeMenu1 = () => {
+    setOpenMenu1(false);
+  };
+  const closeMenu2 = () => {
+    setOpenMenu2(false);
+  };
+  const closeMenu3 = () => {
+    setOpenMenu3(false);
+  };
+  const ref = useOnclickOutside(() => {
+    closeMenu();
+  });
+  const ref1 = useOnclickOutside(() => {
+    closeMenu1();
+  });
+  const ref2 = useOnclickOutside(() => {
+    closeMenu2();
+  });
+  const ref3 = useOnclickOutside(() => {
+    closeMenu3();
+  });
 
-
-const Header= function() {
-
-    const [openMenu, setOpenMenu] = React.useState(false);
-    const [openMenu1, setOpenMenu1] = React.useState(false);
-    const [openMenu2, setOpenMenu2] = React.useState(false);
-    const [openMenu3, setOpenMenu3] = React.useState(false);
-    const handleBtnClick = (): void => {
-      setOpenMenu(!openMenu);
-    };
-    const handleBtnClick1 = (): void => {
-      setOpenMenu1(!openMenu1);
-    };
-    const handleBtnClick2 = (): void => {
-      setOpenMenu2(!openMenu2);
-    };
-    const handleBtnClick3 = (): void => {
-      setOpenMenu3(!openMenu3);
-    };
-    const closeMenu = (): void => {
-      setOpenMenu(false);
-    };
-    const closeMenu1 = (): void => {
-      setOpenMenu1(false);
-    };
-    const closeMenu2 = (): void => {
-      setOpenMenu2(false);
-    };
-    const closeMenu3 = (): void => {
-      setOpenMenu3(false);
-    };
-    const ref = useOnclickOutside(() => {
-      closeMenu();
-    });
-    const ref1 = useOnclickOutside(() => {
-      closeMenu1();
-    });
-    const ref2 = useOnclickOutside(() => {
-      closeMenu2();
-    });
-    const ref3 = useOnclickOutside(() => {
-      closeMenu3();
-    });
-
-    const [showmenu, btn_icon] = useState(false);
-    useEffect(() => {
+  const [showmenu, btn_icon] = useState(false);
+  useEffect(() => {
     const header = document.getElementById("myHeader");
     const totop = document.getElementById("scroll-to-top");
     const sticky = header.offsetTop;
