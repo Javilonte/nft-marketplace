@@ -750,7 +750,7 @@ a {
   .dropdown {
     position: relative;
     text-align: center;
-    a {
+    span {
       color: $black_soft !important;
       text-transform: none;
       font-weight: normal;
@@ -796,8 +796,8 @@ a {
   z-index: 999;
   transition: all 0.6s ease;
   &.white {
-    a {
-      color: $black;
+    span {
+      color: $white;
     }
     .btn {
       color: $black;
@@ -813,7 +813,7 @@ a {
     align-items: center;
     flex-wrap: nowrap;
   }
-  a {
+  span {
     position: relative;
     font-size: 14px;
     font-weight: 800;
@@ -881,7 +881,7 @@ a {
       padding: 0;
       width: max-content;
       border-bottom: none;
-      a {
+      span {
         padding: 0;
         .d-3 {
           display: none;
@@ -1005,7 +1005,7 @@ a {
         display: none;
       }
       .mainside {
-        a {
+        span {
           font-size: 13px;
           padding: 4px 10px;
         }
@@ -1053,7 +1053,7 @@ a {
     width: max-content;
     padding-left: 0;
     padding-right: 0;
-    a {
+    span {
       text-align: center;
       color: #fff !important;
       background: #8364e2;
@@ -1079,7 +1079,7 @@ a {
 .navbar-item {
   pointer-events: auto;
 }
-.navbar-item a.active {
+.navbar-item span.active {
   /*pointer-events: none;*/
 }
 /* disable click active */
@@ -4175,7 +4175,7 @@ img.img-rounded {
     background: none;
     box-shadow: unset;
     .dropdown {
-      a {
+      span {
         color: $black !important;
         padding: 10px 10px 10px 0px;
         width: 100%;
@@ -4187,8 +4187,8 @@ img.img-rounded {
   }
   .navbar {
     top: 0;
-    &.white a {
-      color: $gray;
+    &.white span {
+      color: $white;
     }
   }
   #myHeader .container {
