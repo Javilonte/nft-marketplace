@@ -10,6 +10,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.scss";
 import { Provider } from "react-redux";
 import store from "../store";
+import Header from "../menu/header";
+import ScrollToTop from "../menu/ScrollToTop";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -32,7 +34,9 @@ function MyApp({ Component, pageProps }) {
             </Link>
           </div>
         </nav>
+        <Header />
         <Component {...pageProps} />
+        <ScrollToTop />
       </div>
     </Provider>
   );
