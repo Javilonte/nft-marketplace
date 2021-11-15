@@ -89,7 +89,7 @@ const Header = function () {
         <div className="row w-100-nav">
           <div className="logo px-0">
             <div className="navbar-title navbar-item">
-              <NavLink href="/">
+              <NavLink href="/template/home">
                 <React.Fragment>
                   <img
                     src="/img/logo.png"
@@ -137,7 +137,8 @@ const Header = function () {
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu}>
                             <NavLink
-                              href="/"
+                              href="/template/"
+                              home
                               onClick={() =>
                                 window.open(
                                   "http://gigaland.grey.on3-step.com",
@@ -148,25 +149,26 @@ const Header = function () {
                               New Grey Scheme
                             </NavLink>
                             <NavLink
-                              href="/"
+                              href="/template/"
+                              home
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Homepage
                             </NavLink>
                             <NavLink
-                              href="/home1"
+                              href="/template/home1"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Homepage 1
                             </NavLink>
                             <NavLink
-                              href="/home2"
+                              href="/template/home2"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Homepage 2
                             </NavLink>
                             <NavLink
-                              href="/home3"
+                              href="/template/home3"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Homepage 3
@@ -188,43 +190,43 @@ const Header = function () {
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu1}>
                             <NavLink
-                              href="/explore"
+                              href="/template/explore"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Explore
                             </NavLink>
                             <NavLink
-                              href="/explore2"
+                              href="/template/explore2"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Explore 2
                             </NavLink>
                             <NavLink
-                              href="/rangking"
+                              href="/template/rangking"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Rangking
                             </NavLink>
                             <NavLink
-                              href="/colection"
+                              href="/template/colection"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Collection
                             </NavLink>
                             <NavLink
-                              href="/ItemDetail"
+                              href="/template/ItemDetail"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Items Details
                             </NavLink>
                             <NavLink
-                              href="/Auction"
+                              href="/template/Auction"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Live Auction
                             </NavLink>
                             <NavLink
-                              href="/helpcenter"
+                              href="/template/helpcenter"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Help Center
@@ -246,67 +248,67 @@ const Header = function () {
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
                             <NavLink
-                              href="/Author"
+                              href="/template/Author"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Author
                             </NavLink>
                             <NavLink
-                              href="/wallet"
+                              href="/template/wallet"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Wallet
                             </NavLink>
                             <NavLink
-                              href="/create"
+                              href="/template/create"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Create
                             </NavLink>
                             <NavLink
-                              href="/create2"
+                              href="/template/create2"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Create 2
                             </NavLink>
                             <NavLink
-                              href="/createOptions"
+                              href="/template/createOptions"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Create options
                             </NavLink>
                             <NavLink
-                              href="/news"
+                              href="/template/news"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               News
                             </NavLink>
                             <NavLink
-                              href="/works"
+                              href="/template/works"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Gallery
                             </NavLink>
                             <NavLink
-                              href="/login"
+                              href="/template/login"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login
                             </NavLink>
                             <NavLink
-                              href="/loginTwo"
+                              href="/template/loginTwo"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               login 2
                             </NavLink>
                             <NavLink
-                              href="/register"
+                              href="/template/register"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Register
                             </NavLink>
                             <NavLink
-                              href="/contact"
+                              href="/template/contact"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Contact Us
@@ -318,7 +320,7 @@ const Header = function () {
                   </div>
                   <div className="navbar-item">
                     <NavLink
-                      href="/activity"
+                      href="/template/activity"
                       onClick={() => btn_icon(!showmenu)}
                     >
                       Activity
@@ -336,49 +338,49 @@ const Header = function () {
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu3}>
                             <NavLink
-                              href="/elegantIcons"
+                              href="/template/elegantIcons"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Elegant Icon
                             </NavLink>
                             <NavLink
-                              href="/etlineIcons"
+                              href="/template/etlineIcons"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Etline Icon
                             </NavLink>
                             <NavLink
-                              href="/fontAwesomeIcons"
+                              href="/template/fontAwesomeIcons"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Font Awesome Icon
                             </NavLink>
                             <NavLink
-                              href="/accordion"
+                              href="/template/accordion"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Accordion
                             </NavLink>
                             <NavLink
-                              href="/alerts"
+                              href="/template/alerts"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Alerts
                             </NavLink>
                             <NavLink
-                              href="/price"
+                              href="/template/price"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Pricing Table
                             </NavLink>
                             <NavLink
-                              href="/progressbar"
+                              href="/template/progressbar"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Progress bar
                             </NavLink>
                             <NavLink
-                              href="/tabs"
+                              href="/template/tabs"
                               onClick={() => btn_icon(!showmenu)}
                             >
                               Tabs
@@ -407,7 +409,7 @@ const Header = function () {
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu}>
                             <NavLink
-                              href=" "
+                              href="/template "
                               onClick={() =>
                                 window.open(
                                   "http://gigaland.grey.on3-step.com",
@@ -417,10 +419,10 @@ const Header = function () {
                             >
                               New Grey Scheme
                             </NavLink>
-                            <NavLink href="/">Homepage</NavLink>
-                            <NavLink href="/home1">Homepage 1</NavLink>
-                            <NavLink href="/home2">Homepage 2</NavLink>
-                            <NavLink href="/home3">Homepage 3</NavLink>
+                            <NavLink href="/template/home">Homepage</NavLink>
+                            <NavLink href="/template/home1">Homepage 1</NavLink>
+                            <NavLink href="/template/home2">Homepage 2</NavLink>
+                            <NavLink href="/template/home3">Homepage 3</NavLink>
                           </div>
                         </div>
                       )}
@@ -439,13 +441,25 @@ const Header = function () {
                       {openMenu1 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu1}>
-                            <NavLink href="/explore">Explore</NavLink>
-                            <NavLink href="/explore2">Explore 2</NavLink>
-                            <NavLink href="/rangking">Rangking</NavLink>
-                            <NavLink href="/colection">Collection</NavLink>
-                            <NavLink href="/ItemDetail">Items Details</NavLink>
-                            <NavLink href="/Auction">Live Auction</NavLink>
-                            <NavLink href="/helpcenter">Help Center</NavLink>
+                            <NavLink href="/template/explore">Explore</NavLink>
+                            <NavLink href="/template/explore2">
+                              Explore 2
+                            </NavLink>
+                            <NavLink href="/template/rangking">
+                              Rangking
+                            </NavLink>
+                            <NavLink href="/template/colection">
+                              Collection
+                            </NavLink>
+                            <NavLink href="/template/ItemDetail">
+                              Items Details
+                            </NavLink>
+                            <NavLink href="/template/Auction">
+                              Live Auction
+                            </NavLink>
+                            <NavLink href="/template/helpcenter">
+                              Help Center
+                            </NavLink>
                           </div>
                         </div>
                       )}
@@ -464,19 +478,23 @@ const Header = function () {
                       {openMenu2 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
-                            <NavLink href="/Author">Author</NavLink>
-                            <NavLink href="/wallet">Wallet</NavLink>
-                            <NavLink href="/create">Create</NavLink>
-                            <NavLink href="/create2">Create 2</NavLink>
-                            <NavLink href="/createOptions">
+                            <NavLink href="/template/Author">Author</NavLink>
+                            <NavLink href="/template/wallet">Wallet</NavLink>
+                            <NavLink href="/template/create">Create</NavLink>
+                            <NavLink href="/template/create2">Create 2</NavLink>
+                            <NavLink href="/template/createOptions">
                               Create Option
                             </NavLink>
-                            <NavLink href="/news">News</NavLink>
-                            <NavLink href="/works">Gallery</NavLink>
-                            <NavLink href="/login">login</NavLink>
-                            <NavLink href="/loginTwo">login 2</NavLink>
-                            <NavLink href="/register">Register</NavLink>
-                            <NavLink href="/contact">Contact Us</NavLink>
+                            <NavLink href="/template/news">News</NavLink>
+                            <NavLink href="/template/works">Gallery</NavLink>
+                            <NavLink href="/template/login">login</NavLink>
+                            <NavLink href="/template/loginTwo">login 2</NavLink>
+                            <NavLink href="/template/register">
+                              Register
+                            </NavLink>
+                            <NavLink href="/template/contact">
+                              Contact Us
+                            </NavLink>
                           </div>
                         </div>
                       )}
@@ -484,7 +502,7 @@ const Header = function () {
                   </div>
                 </div>
                 <div className="navbar-item">
-                  <NavLink href="/activity">
+                  <NavLink href="/template/activity">
                     Activity
                     <span className="lines"></span>
                   </NavLink>
@@ -501,16 +519,26 @@ const Header = function () {
                       {openMenu3 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu3}>
-                            <NavLink href="/elegantIcons">Elegant Icon</NavLink>
-                            <NavLink href="/etlineIcons">Etline Icon</NavLink>
-                            <NavLink href="/fontAwesomeIcons">
+                            <NavLink href="/template/elegantIcons">
+                              Elegant Icon
+                            </NavLink>
+                            <NavLink href="/template/etlineIcons">
+                              Etline Icon
+                            </NavLink>
+                            <NavLink href="/template/fontAwesomeIcons">
                               Font Awesome Icon
                             </NavLink>
-                            <NavLink href="/accordion">Accordion</NavLink>
-                            <NavLink href="/alerts">Alerts</NavLink>
-                            <NavLink href="/price">Pricing Table</NavLink>
-                            <NavLink href="/progressbar">Progess Bar</NavLink>
-                            <NavLink href="/tabs">Tabs</NavLink>
+                            <NavLink href="/template/accordion">
+                              Accordion
+                            </NavLink>
+                            <NavLink href="/template/alerts">Alerts</NavLink>
+                            <NavLink href="/template/price">
+                              Pricing Table
+                            </NavLink>
+                            <NavLink href="/template/progressbar">
+                              Progess Bar
+                            </NavLink>
+                            <NavLink href="/template/tabs">Tabs</NavLink>
                           </div>
                         </div>
                       )}
@@ -522,7 +550,7 @@ const Header = function () {
           </BreakpointProvider>
 
           <div className="mainside">
-            <NavLink href="/wallet" className="btn-main">
+            <NavLink href="/template/wallet" className="btn-main">
               Connect Wallet
             </NavLink>
           </div>
