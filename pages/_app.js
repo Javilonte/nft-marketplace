@@ -1,7 +1,15 @@
-import '../styles/Home.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
-import Logo from '../public/img/logoTwinBusiness.png'
+//import "../styles/Home.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "../public/img/logoTwinBusiness.png";
+import "../styles/animated.css";
+import "../node_modules/font-awesome/css/font-awesome.min.css";
+import "../node_modules/elegant-icons/style.css";
+import "../node_modules/et-line/style.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../styles/style.scss";
+import { Provider } from "react-redux";
+import store from "../store";
 
   
   
