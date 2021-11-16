@@ -1,6 +1,6 @@
-import React from 'react';
-import Footer from '../../components/footer';
-import { createGlobalStyle } from 'styled-components';
+import React from "react";
+import Footer from "../../components/footer";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.sticky.white {
@@ -36,55 +36,95 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const logintwo= () => (
-<div>
-<GlobalStyles/>
+const logintwo = () => (
+  <div>
+    <GlobalStyles />
 
-  <section className='jumbotron breadcumb no-bg' style={{backgroundImage: `url(${'./img/background/subheader.jpg'})`}}>
-    <div className='mainbreadcumb'>
-      <div className='container'>
-        <div className='row align-items-center'>
-          <div className="col-lg-5 text-light wow fadeInRight" data-wow-delay=".5s">
+    <section
+      className="jumbotron breadcumb no-bg"
+      style={{ backgroundImage: `url(${"/img/background/subheader.jpg"})` }}
+    >
+      <div className="mainbreadcumb">
+        <div className="container">
+          <div className="row align-items-center">
+            <div
+              className="col-lg-5 text-light wow fadeInRight"
+              data-wow-delay=".5s"
+            >
               <div className="spacer-10"></div>
               <h1>Create, sell or collect digital items.</h1>
-              <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-          </div>
-          <div className="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
-            <div className="box-login">
-              <h3 className="mb10">Sign In</h3>
-              <p>Login using an existing account or create a new account <span>here</span>.</p>
-              <form name="contactForm" id='contact_form' className="form-border" action='#'>
+              <p className="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+                enim.
+              </p>
+            </div>
+            <div
+              className="col-lg-4 offset-lg-2 wow fadeIn"
+              data-wow-delay=".5s"
+            >
+              <div className="box-login">
+                <h3 className="mb10">Sign In</h3>
+                <p>
+                  Login using an existing account or create a new account{" "}
+                  <span>here</span>.
+                </p>
+                <form
+                  name="contactForm"
+                  id="contact_form"
+                  className="form-border"
+                  action="#"
+                >
+                  <div className="field-set">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      className="form-control"
+                      placeholder="username"
+                    />
+                  </div>
 
                   <div className="field-set">
-                      <input type='text' name='email' id='email' className="form-control" placeholder="username"/>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      className="form-control"
+                      placeholder="password"
+                    />
                   </div>
-                
-                 <div className="field-set">
-                      <input type='password' name='password' id='password' className="form-control" placeholder="password"/>
+
+                  <div className="field-set">
+                    <input
+                      type="submit"
+                      id="send_message"
+                      value="Submit"
+                      className="btn btn-main btn-fullwidth color-2"
+                    />
                   </div>
-                
-                <div className="field-set">
-                  <input type='submit' id='send_message' value='Submit' className="btn btn-main btn-fullwidth color-2"/>
-                </div>
-                
-                <div className="clearfix"></div>
-                
-                <div className="spacer-single"></div>
+
+                  <div className="clearfix"></div>
+
+                  <div className="spacer-single"></div>
                   <ul className="list s3">
-                      <li>Login with:</li>
-                      <li><span >Facebook</span></li>
-                      <li><span >Google</span></li>
+                    <li>Login with:</li>
+                    <li>
+                      <span>Facebook</span>
+                    </li>
+                    <li>
+                      <span>Google</span>
+                    </li>
                   </ul>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <Footer />
-</div>
-
+    <Footer />
+  </div>
 );
 export default logintwo;

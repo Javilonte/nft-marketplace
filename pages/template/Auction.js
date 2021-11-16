@@ -1,7 +1,7 @@
-import React from 'react';
-import ColumnAuctionRedux from '../../components/ColumnAuctionRedux';
-import Footer from '../../components/footer';
-import { createGlobalStyle } from 'styled-components';
+import React from "react";
+import ColumnAuctionRedux from "../../components/ColumnAuctionRedux";
+import Footer from "../../components/footer";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.sticky.white {
@@ -37,30 +37,29 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-
-
-const explore= () => (
-<div>
-<GlobalStyles/>
-  <section className='jumbotron breadcumb no-bg' style={{backgroundImage: `url(${'./img/background/subheader.jpg'})`}}>
-    <div className='mainbreadcumb'>
-      <div className='container'>
-        <div className='row m-10-hor'>
-          <div className='col-12'>
-            <h1 className='text-center'>Live Auction</h1>
+const explore = () => (
+  <div>
+    <GlobalStyles />
+    <section
+      className="jumbotron breadcumb no-bg"
+      style={{ backgroundImage: `url(${"/img/background/subheader.jpg"})` }}
+    >
+      <div className="mainbreadcumb">
+        <div className="container">
+          <div className="row m-10-hor">
+            <div className="col-12">
+              <h1 className="text-center">Live Auction</h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section className='container'>
-    <ColumnAuctionRedux/>
-  </section>
+    <section className="container">
+      <ColumnAuctionRedux />
+    </section>
 
-
-  <Footer />
-</div>
-
+    <Footer />
+  </div>
 );
 export default explore;

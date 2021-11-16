@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Link } from '@reach/router';
-import Footer from '../../components/footer';
-import { createGlobalStyle } from 'styled-components';
+import Link from "next/link";
+import Footer from "../../components/footer";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.sticky.white {
@@ -38,46 +38,51 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default class Createpage extends Component {
-
-
-
-render() {
+  render() {
     return (
       <div>
-      <GlobalStyles/>
+        <GlobalStyles />
 
-        <section className='jumbotron breadcumb no-bg' style={{backgroundImage: `url(${'./img/background/subheader.jpg'})`}}>
-          <div className='mainbreadcumb'>
-            <div className='container'>
-              <div className='row m-10-hor'>
-                <div className='col-12'>
-                  <h1 className='text-center'>Create Collectible</h1>
+        <section
+          className="jumbotron breadcumb no-bg"
+          style={{ backgroundImage: `url(${"/img/background/subheader.jpg"})` }}
+        >
+          <div className="mainbreadcumb">
+            <div className="container">
+              <div className="row m-10-hor">
+                <div className="col-12">
+                  <h1 className="text-center">Create Collectible</h1>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className='container'>
-          <div className='row'>
+        <section className="container">
+          <div className="row">
             <div className="col-md-6 offset-md-3">
-                <p>Choose "Single" if you want your collectible to be one of a kind or "Multiple" if you want to sell one collectible times</p>
-                <Link to="/create2" className="opt-create">
-                    <img src="./img/misc/coll-single.png" alt=""/>
-                    <h3>Single</h3>
-                </Link>
-                <Link to="/create3" className="opt-create">
-                    <img src="./img/misc/coll-multiple.png" alt=""/>
-                    <h3>Multiple</h3>
-                </Link>
+              <p>
+                Choose "Single" if you want your collectible to be one of a kind
+                or "Multiple" if you want to sell one collectible times
+              </p>
+              <Link href="/template/create2" className="opt-create">
+                <>
+                  <img src="/img/misc/coll-single.png" alt="" />
+                  <h3>Single</h3>
+                </>
+              </Link>
+              <Link href="/template/create3" className="opt-create">
+                <>
+                  <img src="/img/misc/coll-multiple.png" alt="" />
+                  <h3>Multiple</h3>
+                </>
+              </Link>
             </div>
           </div>
         </section>
 
-       
-
         <Footer />
       </div>
-   );
+    );
   }
 }
