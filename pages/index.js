@@ -115,7 +115,8 @@ export default function Home() {
   //if (loadingState === "loaded" && !nfts.length)
   //return <h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>;
   return (
-    <div className="flex justify-center">
+    <>
+      {/*<div className="flex justify-center">
       <div className="px-4" style={{ maxWidth: '1600px' }}>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
           {
@@ -137,6 +138,79 @@ export default function Home() {
           }
         </div>
       </div>
-    </div>
-  )
+      </div>
+      */}
+      <div>
+        <GlobalStyles />
+        <section
+          className="jumbotron no-bg"
+          style={{ backgroundImage: `url(${"/img/background/2.jpg"})` }}
+        >
+          <Particle />
+          <SliderMainParticle />
+        </section>
+
+        <section className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center">
+                <h2>Popular Items</h2>
+                <div className="small-border"></div>
+              </div>
+            </div>
+          </div>
+
+          <ColumnNewRedux />
+        </section>
+
+        <section className="container-fluid bg-gray">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center">
+                <h2>Hot Collections</h2>
+                <div className="small-border"></div>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <CarouselCollectionRedux />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center">
+                <h2>Top Sellers</h2>
+                <div className="small-border"></div>
+              </div>
+            </div>
+            <div className="col-lg-12">
+              <AuthorListRedux />
+            </div>
+          </div>
+        </section>
+
+        <section className="container-fluid bg-gray">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="text-center">
+                <h2>Create and sell your NFTs</h2>
+                <div className="small-border"></div>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <FeatureBox />
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    </>
+  );
 }
