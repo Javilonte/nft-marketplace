@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const footer = () => (
   <footer className="footer-light">
@@ -122,12 +123,15 @@ const footer = () => (
             <div className="de-flex">
               <div className="de-flex-col">
                 <span onClick={() => window.open("", "_self")}>
-                  <img alt="" className="f-logo d-1" src="/img/logo.png" />
-                  <img
-                    alt=""
-                    className="f-logo d-3"
-                    src="/img/logo-2-light.png"
-                  />
+                  <figure className="figure-img" style={{ maxWidth: 240 }}>
+                    <Image
+                      src="/twinbusiness.svg"
+                      alt="Twinbusiness logo"
+                      width={300}
+                      height={41}
+                    />
+                  </figure>
+
                   <span className="copy">
                     &copy; Copyright 2021 - Gigaland by Designesia
                   </span>

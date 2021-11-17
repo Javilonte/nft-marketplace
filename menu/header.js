@@ -5,6 +5,7 @@ import Breakpoint, {
 } from "react-socks";
 import { header } from "react-bootstrap";
 import Link from "next/link";
+import Image from "next/image";
 import useOnclickOutside from "react-cool-onclickoutside";
 
 setDefaultBreakpoints([{ xs: 0 }, { l: 1199 }, { xl: 1200 }]);
@@ -91,21 +92,14 @@ const Header = function () {
             <div className="navbar-title navbar-item">
               <NavLink href="/template/home">
                 <React.Fragment>
-                  <img
-                    src="/img/logo.png"
-                    className="img-fluid d-block"
-                    alt="#"
-                  />
-                  <img
-                    src="/img/logo-2.png"
-                    className="img-fluid d-3"
-                    alt="#"
-                  />
-                  <img
-                    src="/img/logo-light.png"
-                    className="img-fluid d-none"
-                    alt="#"
-                  />
+                  <figure className="figure-img" style={{ maxWidth: 240 }}>
+                    <Image
+                      src="/twinbusiness.svg"
+                      alt="Twinbusiness logo"
+                      width={300}
+                      height={41}
+                    />
+                  </figure>
                 </React.Fragment>
               </NavLink>
             </div>
