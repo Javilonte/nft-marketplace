@@ -141,31 +141,6 @@ const Header = function () {
                     <div className="dropdown-custom btn">
                       Subir NFT
                       <span className="lines"></span>
-                      {openMenu1 && (
-                        <div className="item-dropdown">
-                          <div className="dropdown" onClick={closeMenu1}>
-                            <NavLink href="/template/explore">Explore</NavLink>
-                            <NavLink href="/template/explore2">
-                              Explore 2
-                            </NavLink>
-                            <NavLink href="/template/rangking">
-                              Rangking
-                            </NavLink>
-                            <NavLink href="/template/colection">
-                              Collection
-                            </NavLink>
-                            <NavLink href="/template/ItemDetail">
-                              Items Details
-                            </NavLink>
-                            <NavLink href="/template/Auction">
-                              Live Auction
-                            </NavLink>
-                            <NavLink href="/template/helpcenter">
-                              Help Center
-                            </NavLink>
-                          </div>
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
