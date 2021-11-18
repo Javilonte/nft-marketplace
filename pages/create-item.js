@@ -116,6 +116,29 @@ export default function CreateItem() {
     router.push("/");
   }
 
+  const handleShow = () => {
+    document.getElementById("tab_opt_1").classList.add("show");
+    document.getElementById("tab_opt_1").classList.remove("hide");
+    document.getElementById("tab_opt_2").classList.remove("show");
+    document.getElementById("btn1").classList.add("active");
+    document.getElementById("btn2").classList.remove("active");
+    document.getElementById("btn3").classList.remove("active");
+  };
+  const handleShow1 = () => {
+    document.getElementById("tab_opt_1").classList.add("hide");
+    document.getElementById("tab_opt_1").classList.remove("show");
+    document.getElementById("tab_opt_2").classList.add("show");
+    document.getElementById("btn1").classList.remove("active");
+    document.getElementById("btn2").classList.add("active");
+    document.getElementById("btn3").classList.remove("active");
+  };
+  const handleShow2 = () => {
+    document.getElementById("tab_opt_1").classList.add("show");
+    document.getElementById("btn1").classList.remove("active");
+    document.getElementById("btn2").classList.remove("active");
+    document.getElementById("btn3").classList.add("active");
+  };
+
   return (
     <div className="flex justify-center">
       <div className="w-1/2 flex flex-col pb-12">
