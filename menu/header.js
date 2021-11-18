@@ -129,30 +129,11 @@ const Header = function () {
                       href="/template/explore2"
                       className="dropdown-custom btn"
                     >
-                      Home
-                      <span className="lines"></span>
-                      {openMenu && (
-                        <div className="item-dropdown">
-                          <div className="dropdown" onClick={closeMenu}>
-                            <NavLink
-                              href="/template "
-                              onClick={() =>
-                                window.open(
-                                  "http://gigaland.grey.on3-step.com",
-                                  "_self"
-                                )
-                              }
-                            >
-                              New Grey Scheme
-                            </NavLink>
-                            <NavLink href="/template/home">Homepage</NavLink>
-                            <NavLink href="/template/home1">Homepage 1</NavLink>
-                            <NavLink href="/template/home2">Homepage 2</NavLink>
-                            <NavLink href="/template/home3">Homepage 3</NavLink>
-                          </div>
-                        </div>
-                      )}
-                    </div>
+                      <>
+                        Home
+                        <span className="lines"></span>
+                      </>
+                    </NavLink>
                   </div>
                 </div>
                 <div className="navbar-item">
