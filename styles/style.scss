@@ -688,7 +688,7 @@ p.lead {
     }
   }
 }
-a {
+span {
   text-decoration: none;
   color: inherit;
 }
@@ -797,7 +797,7 @@ a {
   transition: all 0.6s ease;
   &.white {
     span {
-      color: $white;
+      color: $black;
     }
     .btn {
       color: $black;

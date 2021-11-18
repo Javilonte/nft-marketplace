@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     .navbar .menu-line, .navbar .menu-line1, .navbar .menu-line2{
       background: #111;
     }
-    .item-dropdown .dropdown a{
+    .item-dropdown .dropdown span{
       color: #111 !important;
     }
   }

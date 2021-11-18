@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     color: #fff;
     background: rgba(255, 255, 255, .1);
   }
-  header#myHeader.navbar.white .btn, .navbar.white a, .navbar.sticky.white a{
+  header#myHeader.navbar.white .btn, .navbar.white span, .navbar.sticky.white span{
     color: #fff;
   }
   header#myHeader .dropdown-toggle::after{
@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle`
     .navbar .menu-line, .navbar .menu-line1, .navbar .menu-line2{
       background: #fff;
     }
-    .item-dropdown .dropdown a{
+    .item-dropdown .dropdown span{
       color: #fff !important;
     }
   }

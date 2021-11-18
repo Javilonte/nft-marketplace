@@ -15,7 +15,12 @@ const NavLink = (props) => {
 
   return (
     <Link {...other}>
-      <span className={isCurrent ? "active" : "non-active"}>{children}</span>
+      <span
+        className={isCurrent ? "active" : "non-active"}
+        style={{ cursor: "pointer" }}
+      >
+        {children}
+      </span>
     </Link>
   );
 };
