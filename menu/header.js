@@ -125,10 +125,9 @@ const Header = function () {
               <div className="menu">
                 <div className="navbar-item">
                   <div ref={ref}>
-                    <div
-                      className="dropdown-custom dropdown-toggle btn"
-                      onMouseEnter={handleBtnClick}
-                      onMouseLeave={closeMenu}
+                    <NavLink
+                      href="/template/explore2"
+                      className="dropdown-custom btn"
                     >
                       Home
                       <span className="lines"></span>
