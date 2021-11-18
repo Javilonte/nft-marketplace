@@ -138,12 +138,8 @@ const Header = function () {
                 </div>
                 <div className="navbar-item">
                   <div ref={ref1}>
-                    <div
-                      className="dropdown-custom dropdown-toggle btn"
-                      onMouseEnter={handleBtnClick1}
-                      onMouseLeave={closeMenu1}
-                    >
-                      Explore
+                    <div className="dropdown-custom btn">
+                      Subir NFT
                       <span className="lines"></span>
                       {openMenu1 && (
                         <div className="item-dropdown">
