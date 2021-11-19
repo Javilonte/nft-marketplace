@@ -51,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
 export default function CreateItem() {
   const [fileUrl, setFileUrl] = useState(null);
   const [isActive, setIsActive] = useState(false);
-  const [formInput, updateFormInput] = useState({
+  const [formInput, setFormInput] = useState({
     price: "",
     name: "",
     description: "",
@@ -147,17 +147,17 @@ export default function CreateItem() {
         <input 
           placeholder="Asset Name"
           className="mt-8 border rounded p-4"
-          onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
+          onChange={e => setFormInput({ ...formInput, name: e.target.value })}
         />
         <textarea
           placeholder="Asset Description"
           className="mt-2 border rounded p-4"
-          onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
+          onChange={e => setFormInput({ ...formInput, description: e.target.value })}
         />
         <input
           placeholder="Asset Price in Eth"
           className="mt-2 border rounded p-4"
-          onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
+          onChange={e => setFormInput({ ...formInput, price: e.target.value })}
         />
         <input
           type="file"
@@ -215,7 +215,12 @@ export default function CreateItem() {
                         className="btn-main"
                         value="Browse"
                       />
-                      <input id="upload_file" type="file" multiple />
+                      <input
+                        id="upload_file"
+                        type="file"
+                        multiple
+                        onChange={onChange}
+                      />
                     </div>
                   </div>
 
@@ -250,6 +255,12 @@ export default function CreateItem() {
                           id="item_price"
                           className="form-control"
                           placeholder="enter price for one item (ETH)"
+                          onChange={(event) =>
+                            setFormInput({
+                              ...formInput,
+                              price: event.target.value,
+                            })
+                          }
                         />
                       </div>
 
@@ -342,6 +353,9 @@ export default function CreateItem() {
                     id="item_title"
                     className="form-control"
                     placeholder="e.g. 'Crypto Funk"
+                    onChange={(event) =>
+                      setFormInput({ ...formInput, name: event.target.value })
+                    }
                   />
 
                   <div className="spacer-10"></div>
@@ -353,6 +367,12 @@ export default function CreateItem() {
                     id="item_desc"
                     className="form-control"
                     placeholder="e.g. 'This is very limited item'"
+                    onChange={(event) =>
+                      setFormInput({
+                        ...formInput,
+                        description: event.target.value,
+                      })
+                    }
                   ></textarea>
 
                   <div className="spacer-10"></div>
