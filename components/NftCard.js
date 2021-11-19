@@ -52,7 +52,7 @@ const NftCard = ({
             <span>
               <img
                 onLoad={onImgLoad}
-                src={nft.previewImg}
+                src={nft.image}
                 className="lazy nft__item_preview"
                 alt=""
               />
