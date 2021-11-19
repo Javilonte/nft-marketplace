@@ -404,6 +404,7 @@ export default function CreateItem() {
                     id="submit"
                     className="btn-main"
                     value="Create Item"
+                    onClick={createMarket}
                   />
                 </div>
               </form>
