@@ -1,14 +1,22 @@
-import { ethers } from 'ethers'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-import Web3Modal from "web3modal"
+import { ethers } from "ethers";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Web3Modal from "web3modal";
+import ColumnNewThreeColRedux from "../components/ColumnNewThreeColRedux";
+import Footer from "../components/footer";
+import { createGlobalStyle } from "styled-components";
+import CheckboxFilter from "../components/CheckboxFilter";
 
-import {
-  nftmarketaddress, nftaddress
-} from '../config'
+import { nftmarketaddress, nftaddress } from "../config";
 
-import Market from '../artifacts/contracts/NFTMarket.sol/NFTMarket.json'
-import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
+import Market from "../artifacts/contracts/NFTMarket.sol/NFTMarket.json";
+import NFT from "../artifacts/contracts/NFT.sol/NFT.json";
+
+const GlobalStyles = createGlobalStyle`
+  .navbar {
+    border-bottom: solid 1px rgba(255, 255, 255, .1) !important;
+  }
+`;
 
 export default function CreatorDashboard() {
   const [nfts, setNfts] = useState([])
