@@ -126,7 +126,7 @@ const Header = function () {
                 <div className="navbar-item">
                   <div ref={ref}>
                     <NavLink
-                      href="/template/explore2"
+                      href="/creator-dashboard"
                       className="dropdown-custom btn"
                     >
                       <>
@@ -138,10 +138,15 @@ const Header = function () {
                 </div>
                 <div className="navbar-item">
                   <div ref={ref1}>
-                    <div className="dropdown-custom btn">
-                      Subir NFT
-                      <span className="lines"></span>
-                    </div>
+                    <NavLink
+                      href="/create-item"
+                      className="dropdown-custom btn"
+                    >
+                      <>
+                        Subir NFT
+                        <span className="lines"></span>
+                      </>
+                    </NavLink>
                   </div>
                 </div>
                 <div className="navbar-item">
