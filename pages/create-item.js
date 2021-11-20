@@ -113,7 +113,7 @@ export default function CreateItem() {
       value: listingPrice,
     });
     await transaction.wait();
-    router.push("/");
+    router.push("/creator-dashboard");
   }
 
   const handleShow = () => {
