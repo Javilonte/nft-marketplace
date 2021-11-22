@@ -77,7 +77,7 @@ export default function CreateItem() {
     const data = JSON.stringify({
       name,
       description,
-      image: fileUrl,
+      image: fileUrl
     });
     try {
       const added = await client.add(data);
@@ -113,7 +113,7 @@ export default function CreateItem() {
       value: listingPrice,
     });
     await transaction.wait();
-    router.push("/creator-dashboard");
+    router.push("/creator-dashboard"); //Borrar el creator dashboard
   }
 
   const handleShow = () => {
@@ -180,26 +180,26 @@ export default function CreateItem() {
         <GlobalStyles />
 
         <section
-          className="jumbotron breadcumb no-bg"
+          className="jumbotron breadcumb no-bg "
           style={{ backgroundImage: `url(${"/img/background/subheader.jpg"})` }}
         >
           <div className="mainbreadcumb">
             <div className="container">
               <div className="row m-10-hor">
                 <div className="col-12">
-                  <h1 className="text-center">Create 2</h1>
+                  <h1 className="text-center">Sube tus NFTs </h1>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="container">
-          <div className="row">
-            <div className="col-lg-7 offset-lg-1 mb-5">
+        <section className="container justify-center">
+          <div className="row ">
+            <div className="col-lg-7 offset-lg-1 mb-5 justify-center">
               <form id="form-create-item" className="form-border" action="#">
                 <div className="field-set">
-                  <h5>Upload file</h5>
+                  <h5>Subir NFT</h5>
 
                   <div className="d-create-file">
                     <p id="file_name">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</p>
@@ -226,9 +226,9 @@ export default function CreateItem() {
 
                   <div className="spacer-single"></div>
 
-                  <h5>Select method</h5>
+                  <h5>Ingresa los detalles</h5>
                   <div className="de_tab tab_methods">
-                    <ul className="de_nav">
+{/*                     <ul className="de_nav">
                       <li id="btn1" className="active" onClick={handleShow}>
                         <span>
                           <i className="fa fa-tag"></i>Fixed price
@@ -244,7 +244,7 @@ export default function CreateItem() {
                           <i className="fa fa-users"></i>Open for bids
                         </span>
                       </li>
-                    </ul>
+                    </ul> */}
 
                     <div className="de_tab_content pt-3">
                       <div id="tab_opt_1">
@@ -303,9 +303,9 @@ export default function CreateItem() {
                     </div>
                   </div>
 
-                  <div className="spacer-20"></div>
+                  {/* <div className="spacer-20"></div> */}
 
-                  <div className="switch-with-title">
+                  {/* <div className="switch-with-title">
                     <h5>
                       <i className="fa fa- fa-unlock-alt id-color-2 mr10"></i>
                       Unlock once purchased
@@ -344,7 +344,7 @@ export default function CreateItem() {
                         />
                       </div>
                     ) : null}
-                  </div>
+                  </div> */}
 
                   <h5>Title</h5>
                   <input
@@ -375,7 +375,7 @@ export default function CreateItem() {
                     }
                   ></textarea>
 
-                  <div className="spacer-10"></div>
+                  {/* <div className="spacer-10"></div>
 
                   <h5>Price</h5>
                   <input
@@ -384,9 +384,9 @@ export default function CreateItem() {
                     id="item_price"
                     className="form-control"
                     placeholder="enter price for one item (ETH)"
-                  />
+                  /> */}
 
-                  <div className="spacer-10"></div>
+                  {/* <div className="spacer-10"></div>
 
                   <h5>Royalties</h5>
                   <input
@@ -396,21 +396,21 @@ export default function CreateItem() {
                     className="form-control"
                     placeholder="suggested: 0, 10%, 20%, 30%. Maximum is 70%"
                   />
-
+ */}      
                   <div className="spacer-10"></div>
 
                   <input
                     type="button"
                     id="submit"
                     className="btn-main"
-                    value="Create Item"
+                    value="Subir NFT"
                     onClick={createMarket}
                   />
                 </div>
               </form>
             </div>
-
-            <div className="col-lg-3 col-sm-6 col-xs-12">
+          
+            {/* <div className="col-lg-3 col-sm-6 col-xs-12">
               <h5>Preview item</h5>
               <div className="nft__item m-0">
                 <div className="de_countdown">
@@ -452,7 +452,7 @@ export default function CreateItem() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
