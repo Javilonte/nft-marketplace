@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import styled from "styled-components";
 import Clock from "./Clock";
+
 //import { navigate } from '@reach/router';
 
 const Outer = styled.div`
@@ -80,7 +81,7 @@ const NftCard = ({
           )}
           <div className="nft__item_action">
             <span onClick={() => navigateTo(nft.bidLink)}>
-              {nft.status === "on_auction" ? "Place a bid" : "Buy Now"}
+              {nft.status === "on_auction" ? "Place a bid" : <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>}
             </span>
           </div>
           <div className="nft__item_like">

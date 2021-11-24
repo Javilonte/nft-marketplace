@@ -352,7 +352,7 @@ export default function CreateItem() {
                     name="item_title"
                     id="item_title"
                     className="form-control"
-                    placeholder="e.g. 'Crypto Funk"
+                    placeholder="Ejemplo: 'NFTwin' "
                     onChange={(event) =>
                       setFormInput({ ...formInput, name: event.target.value })
                     }
@@ -366,7 +366,7 @@ export default function CreateItem() {
                     name="item_desc"
                     id="item_desc"
                     className="form-control"
-                    placeholder="e.g. 'This is very limited item'"
+                    placeholder="Ejemplo:  'Los NFTwins son los más valiosos'"
                     onChange={(event) =>
                       setFormInput({
                         ...formInput,

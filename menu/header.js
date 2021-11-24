@@ -95,7 +95,7 @@ const Header = function () {
         <div className="row w-100-nav">
           <div className="logo px-0">
             <div className="navbar-title navbar-item">
-              <NavLink href="/template/home">
+              <NavLink href="/template/home1">
                 <React.Fragment>
                   <figure className="figure-img" style={{ maxWidth: 240 }}>
                     <Image
@@ -115,7 +115,7 @@ const Header = function () {
               id="quick_search"
               className="xs-hide"
               name="quick_search"
-              placeholder="search item here..."
+              placeholder="Busca tu nft aquí..."
               type="text"
             />
           </div>
@@ -126,11 +126,11 @@ const Header = function () {
                 <div className="navbar-item">
                   <div ref={ref}>
                     <NavLink
-                      href="/creator-dashboard"
+                      href="/explore"
                       className="dropdown-custom btn"
                     >
                       <>
-                        Home
+                        Explorar
                         <span className="lines"></span>
                       </>
                     </NavLink>
@@ -156,12 +156,12 @@ const Header = function () {
                       onMouseEnter={handleBtnClick2}
                       onMouseLeave={closeMenu2}
                     >
-                      Pages
+                      Mis NFT
                       <span className="lines"></span>
                       {openMenu2 && (
                         <div className="item-dropdown">
                           <div className="dropdown" onClick={closeMenu2}>
-                            <NavLink href="/template/Author">Author</NavLink>
+                            <NavLink href="/creator-dashboard">Author</NavLink>
                             <NavLink href="/template/wallet">Wallet</NavLink>
                             <NavLink href="/template/create">Create</NavLink>
                             <NavLink href="/template/create2">Create 2</NavLink>
@@ -185,13 +185,13 @@ const Header = function () {
                   </div>
                 </div>
                 <div className="navbar-item">
-                  <NavLink href="/template/activity">
-                    Activity
+                  <NavLink href="/creator-dashboard">
+                        Cuenta
                     <span className="lines"></span>
                   </NavLink>
                 </div>
                 <div className="navbar-item">
-                  <div ref={ref3}>
+                  {/* <div ref={ref3}>
                     <div
                       className="dropdown-custom dropdown-toggle btn"
                       onMouseEnter={handleBtnClick3}
@@ -226,7 +226,7 @@ const Header = function () {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </Breakpoint>

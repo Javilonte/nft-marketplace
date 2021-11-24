@@ -108,6 +108,50 @@ export default function CreatorDashboard() {
     */}
       <div>
         <GlobalStyles />
+        <section
+        id="profile_banner"
+        className="jumbotron breadcumb no-bg"
+        style={{
+          backgroundImage: `url(${"/img/author_single/author_banner.jpg"})`,
+        }}
+      >
+        <div className="mainbreadcumb"></div>
+      </section>
+
+      <section className="container no-bottom">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="d_profile de-flex">
+              <div className="de-flex-col">
+                <div className="profile_avatar">
+                  <img src="/img/author_single/author_thumbnail.jpg" alt="" />
+                  <i className="fa fa-check"></i>
+                  <div className="profile_name">
+                    <h4>
+                      Monica Lucas
+                      <span className="profile_username">@monicaaa</span>
+                      <span id="wallet" className="profile_wallet">
+                        DdzFFzCqrhshMSxb9oW3mRo4MJrQkusV3fGFSTwaiu4wPBqMryA9DYVJCkW9n7twCffG5f5wX2sSkoDXGiZB1HPa7K7f865Kk4LqnrME
+                      </span>
+                      <button id="btn_copy" title="Copy Text">
+                        Copy
+                      </button>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="profile_follow de-flex">
+                <div className="de-flex-col">
+                  <div className="profile_follower">500 followers</div>
+                </div>
+                <div className="de-flex-col">
+                  <span className="btn-main">Follow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
         <section className="container">
           {loadingState === "loaded" && !nfts.length ? (
             <h1 className="py-10 px-20 text-3xl">No assets created</h1>
