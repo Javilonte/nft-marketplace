@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import { create as ipfsHttpClient } from "ipfs-http-client";
 import { useRouter } from "next/router";
 import Web3Modal from "web3modal";
-import Clock from "../components/Clock";
+
 import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
 
@@ -113,7 +113,7 @@ export default function CreateItem() {
       value: listingPrice,
     });
     await transaction.wait();
-    router.push("/creator-dashboard"); //Borrar el creator dashboard
+    router.push("/explore"); //Borrar el creator dashboard
   }
 
   const handleShow = () => {

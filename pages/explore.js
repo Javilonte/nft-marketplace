@@ -126,7 +126,7 @@ return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
         {
           nfts.map((nft, i) => (
-            <div key={i} className="border shadow rounded-xl overflow-hidden">
+            <div key={i} className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4 border shadow rounded-xl overflow-hidden">
               <img src={nft.image} />
               <div className="p-4">
                 <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>

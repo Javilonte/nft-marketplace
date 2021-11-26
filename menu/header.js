@@ -150,6 +150,19 @@ const Header = function () {
                   </div>
                 </div>
                 <div className="navbar-item">
+                  <div ref={ref1}>
+                    <NavLink
+                      href="/my-assets"
+                      className="dropdown-custom btn"
+                    >
+                      <>
+                        Mis NFT
+                        <span className="lines"></span>
+                      </>
+                    </NavLink>
+                  </div>
+                </div>
+                {/* <div className="navbar-item">
                   <div ref={ref2}>
                     <div
                       className="dropdown-custom dropdown-toggle btn"
@@ -183,7 +196,7 @@ const Header = function () {
                       )}
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="navbar-item">
                   <NavLink href="/creator-dashboard">
                         Cuenta
