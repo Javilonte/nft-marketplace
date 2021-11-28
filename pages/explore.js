@@ -100,7 +100,26 @@ export default function Home() {
     loadNFTs()
   }
 
-if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>)
+if (loadingState === 'loaded' && !nfts.length) return (<div>
+  <section
+  className="jumbotron breadcumb no-bg"
+  style={{ backgroundImage: `url(${"/img/background/subheader.jpg"})` }}
+>
+  <div className="mainbreadcumb">
+    <div className="container">
+      <div className="row m-10-hor">
+        <div className="col-12">
+          <h1 className="text-center">Explorar</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>
+</div>
+)
 return (
   <div>
     <GlobalStyles />
