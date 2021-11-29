@@ -1,5 +1,6 @@
 import React from "react";
-import ColumnNewRedux from "../components/ColumnNewRedux";
+import ColumnNewThreeColRedux from "../components/ColumnNewThreeColRedux";
+import CheckboxFilter from "../components/CheckboxFilter";
 import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
 import TopFilterBar from "../components/TopFilterBar";
@@ -140,29 +141,23 @@ return (
     </section>
 
     
-  <div className="flex justify-center">
-    <div className="px-4" style={{ maxWidth: '1600px' }}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
-        {
-          nfts.map((nft, i) => (
-            <div key={i} className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4 border shadow rounded-xl overflow-hidden">
-              <img src={nft.image} />
-              <div className="p-4">
-                <p style={{ height: '64px' }} className="text-2xl font-semibold">{nft.name}</p>
-                <div style={{ height: '70px', overflow: 'hidden' }}>
-                  <p className="text-gray-400">{nft.description}</p>
+    <section className="container">
+          {loadingState === "loaded" && !nfts.length ? (
+            <h1 className="py-10 px-20 text-3xl">No hay NFT en el mercado</h1>
+          ) : (
+            <>
+              <div className="row">
+                <div className="spacer-double"></div>
+                <div className="col-md-3">
+                  <CheckboxFilter />
+                </div>
+                <div className="col-md-9">
+                  <ColumnNewThreeColRedux nfts={nfts} />
                 </div>
               </div>
-              <div className="p-4 bg-black">
-                <p className="text-2xl mb-4 font-bold text-white">{nft.price} ETH</p>
-                <button className="w-full bg-pink-500 text-white font-bold py-2 px-12 rounded" onClick={() => buyNft(nft)}>Buy</button>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </div>
+            </>
+          )}
+        </section>
   
   <Footer />
   </div>
