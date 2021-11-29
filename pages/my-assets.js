@@ -65,10 +65,7 @@ export default function MyAssets() {
     setNfts(items)
     setLoadingState('loaded') 
   }
-  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl">No assets owned</h1>)
-  return (
-    
-    <div className="flex justify-center">
+  if (loadingState === 'loaded' && !nfts.length) return (<div>
     <section
           className="jumbotron breadcumb no-bg "
           style={{ backgroundImage: `url(${"/img/background/subheader.jpg"})` }}
@@ -83,10 +80,17 @@ export default function MyAssets() {
             </div>
           </div>
         </section>
+        <h1 className="py-10 px-20 text-3xl">No tienes NFTs disponibles... Ve al mercado a comprar uno!</h1>
+  </div>)
+  return (
+    
+    <div className="flex justify-center">
+    
         
       <div className="className">
       <section className="container">
           {loadingState === "loaded" && !nfts.length ? (
+            
             <h1 className="py-10 px-20 text-3xl">No assets created</h1>
           ) : (
             <>

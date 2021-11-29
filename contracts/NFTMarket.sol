@@ -98,8 +98,15 @@ contract NFTMarket is ReentrancyGuard {
     _itemsSold.increment();
     payable(owner).transfer(listingPrice);
   }
+  /* function putItemToResell(address nftContract, uint256 itemId, uint256 newPrice){
+        
+        uint256 tokenId = idToMarketItem[itemId].tokenId;
+
+        //getting the error here
+        IERC721(nftContract).transferFrom(msg.sender, address(this), tokenId);       
+    }
   //Poner un NFT en re-venta
-  /* function putItemToResell(address nftContract, uint256 itemId, uint256 newPrice)
+  function putItemToResell(address nftContract, uint256 itemId, uint256 newPrice)
         public
         payable
         nonReentrant
